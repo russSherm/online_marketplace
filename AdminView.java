@@ -6,10 +6,12 @@ import java.rmi.Naming;
  *
  */
 public class AdminView {
+	public void showView() {
+		System.out.println("Welcome back, Administrator! What would you like to do?");
+	}
 
 	public void registerListener(AdminController acontroller) {
-		// Do something
-		
+		// do something
 	}
 	
 }
