@@ -6,11 +6,11 @@ import java.rmi.Naming;
  *
  */
 public class CustomerView {
+	public void showView() {
+		System.out.println("Welcome to the Marketplace, Customer! Have a look around!");
+	}
 
 	public void registerListener(CustomerController ccontroller) {
-		// Do something
-	
+		//do something
 	}
-	
-
 }
