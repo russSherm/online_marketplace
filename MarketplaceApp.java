@@ -1,10 +1,14 @@
+import java.rmi.RemoteException;
 
 public class MarketplaceApp {
-	public static void main(String[] args){
+	public static void main(String[] args) throws RemoteException {
+		String s = null;
+		
 		//Create the MVC
-		MarketplaceModel model = new MarketplaceModel();
+		MarketplaceModel model = new MarketplaceModel(s);
 		CustomerView cview = new CustomerView();
 		AdminView aview = new AdminView();
+		FrontController controller = new FrontController();
 		CustomerController ccontroller = new CustomerController(model,cview);
 		AdminController acontroller = new AdminController(model, aview);
 	
