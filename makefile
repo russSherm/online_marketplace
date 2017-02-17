@@ -5,13 +5,23 @@ JC = javac
         $(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-        MarketplaceServer.java \
+        MarketplaceModel.java \
         CustomerController.java \
         CustomerView.java \
         AdminController.java \
         AdminView.java \
-        MarketplaceModel.java \
-        MarketplaceApp.java
+        Marketplace.java \
+        MarketplaceApp.java \
+        AbstractFactory.java \
+        Administrators.java \
+        Cart.java \
+        Customers.java \
+        Dispatcher.java \
+        FrontController.java \
+        Items.java \
+        Users.java \
+        UsersFactory.java \
+        
 
 default: classes
 
