@@ -6,6 +6,8 @@ import java.util.Scanner;
  * @author Russell Sherman
  */
 
+// Ryan: Why does the Front Controller include the main() method?
+// Shouldn't a View have this functionality in it?
 public class FrontController {
 	//Customer ID Number
 	static int id;

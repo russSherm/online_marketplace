@@ -1,5 +1,6 @@
 import java.rmi.RemoteException;
 
+// Ryan: Please include useful comments in each file.
 public class MarketplaceApp {
 	public static void main(String[] args) throws RemoteException {
 		String s = null;

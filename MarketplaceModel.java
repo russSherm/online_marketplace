@@ -3,6 +3,8 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Scanner;
 
+// Ryan: A better solution would be to break the RMI functionality out from
+// the Application Logic.
 
 /** 
  * Online Marketplace Model
