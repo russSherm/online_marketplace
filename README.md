@@ -17,13 +17,13 @@ Once all files are in Tesla directory, follow these steps to execute the code:
 
 - Establish Java RMI Registry connection by typing 'rmiregistry 1720&' and hitting enter
 
-- Run MarketplaceModel file by running 'java -Djava.security.policy=policy MarketplaceModel' command
+- Run Server file by running 'java -Djava.security.policy=policy Server' command
 
-- On the other Terminal, run 'java -Djava.security.policy=policy FrontController'
+- On the other Terminal, run 'java -Djava.security.policy=policy Client'
 
-- When prompted, enter your name. Entering "Ryan" will log in to the Admin View. 
+- When prompted, enter your role. Entering "administrator" will log in to the Admin View. 
 
-- Entering any other name will direct you to the Customer View.
+- Entering customer will direct you to the Customer View.
 
 - Once finished, hit 'CTRL-C' and then enter 'fg' to check for continuing connections
 

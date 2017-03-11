@@ -1,0 +1,22 @@
+/**
+ * Concrete Command Class
+ * @author Russell Sherman
+ */
+public class RemoveItem implements Initiate {
+	private Items abcItem;
+	
+	/**
+	 * Constructor for Purchase Item
+	 * @param abcItem
+	 */
+	public RemoveItem(Items abcItem){
+		this.abcItem = abcItem;
+	}
+	
+	/**
+	 * Execute Command Method
+	 */
+	public void execute() {
+		abcItem.remove();
+	}
+}
