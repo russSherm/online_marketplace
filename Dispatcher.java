@@ -19,7 +19,7 @@ public class Dispatcher {
 	 * Dispatch correct view based on login credentials
 	 */
 	public void dispatch(String request) {
-		if(request.equalsIgnoreCase("Ryan")) {
+		if(request.equalsIgnoreCase("administrator")) {
 			adminView.showView();
 		}
 		else {
