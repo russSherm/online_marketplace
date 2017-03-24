@@ -2,6 +2,7 @@ import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+// Ryan: Please include useful comments in each file.
 public class AuthorizationInvocationHandler implements InvocationHandler, Serializable {
 	private static final long serialVersionUID = 6925780928377938176L;
 	private Object objectImpl;

@@ -8,3 +8,4 @@ import java.util.Scanner;
 // Fix: Created a server class similar to the Java Annotations example.
 // Application is now initiated with Client and Server classes.
 
+// Ryan: This class is no longer used - please remove.

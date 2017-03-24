@@ -1,4 +1,4 @@
-
+// Ryan: Please include useful comments in each file.
 public class UsersFactory extends AbstractFactory {
 	@Override
 	Users createUser(String userType) {
