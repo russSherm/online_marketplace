@@ -21,6 +21,8 @@ public class Client {
 			 */
 			String name = "//tesla.cs.iupui.edu:1720/Server";
 			
+			// Ryan: Here you are looking for a Marketplace but you bound a ServerInterface to this location.
+			
 			//Locate Marketplace Server
 			Marketplace myMarketplace = (Marketplace) Naming.lookup(name);
 			
