@@ -6,7 +6,7 @@ public class RemoveItem implements Initiate {
 	private Items abcItem;
 	
 	/**
-	 * Constructor for Purchase Item
+	 * Constructor for Remove Item
 	 * @param abcItem
 	 */
 	public RemoveItem(Items abcItem){
@@ -17,6 +17,6 @@ public class RemoveItem implements Initiate {
 	 * Execute Command Method
 	 */
 	public void execute() {
-		abcItem.remove();
+		abcItem.remove(null);
 	}
 }
