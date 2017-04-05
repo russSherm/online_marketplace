@@ -9,9 +9,9 @@ import java.rmi.server.UnicastRemoteObject;
  *
  */
 
-public class Server extends UnicastRemoteObject implements Marketplace {
+public class Server extends UnicastRemoteObject implements ServerInterface {
 	private static final long serialVersionUID = 1634478554656874968L;
-	private int id = 15;
+	@SuppressWarnings("unused")
 	private String name;
 	
 	/**
@@ -22,14 +22,7 @@ public class Server extends UnicastRemoteObject implements Marketplace {
 		super();
 		name = s;
 	}
-
-	//Return ID of the User
-	public synchronized int get_id() throws RemoteException{
-		id++;
-		return id;
-	}
 	
-
 	public static void main(String args[]) {
 	
 		// Set the RMI Security Manager...
@@ -37,11 +30,13 @@ public class Server extends UnicastRemoteObject implements Marketplace {
 		
 		try {
 			System.out.println("Creating a Server!");
+			Thread.sleep(1500);
 			
 			// Location of Server
 			String name = "//tesla.cs.iupui.edu:1720/Server";
 			
 			System.out.println("Server: Binding it to name: " + name);
+			Thread.sleep(1500);
 			
 			ServerInterface assignment = (ServerInterface) Proxy.newProxyInstance(ServerInterface.class.getClassLoader(),
 	                new Class<?>[] {ServerInterface.class},
@@ -55,5 +50,36 @@ public class Server extends UnicastRemoteObject implements Marketplace {
 			System.out.println("Server Exception: " + e.getMessage());
 			e.printStackTrace();
 		}
+	}
+
+	//ServerInterface commands
+	@Override
+	public String purchase(Session session) throws RemoteException {
+		return null;
+	}
+
+	@Override
+	public String update(Session session) throws RemoteException {
+		return null;
+	}
+
+	@Override
+	public String add(Session session) throws RemoteException {
+		return null;
+	}
+
+	@Override
+	public String remove(Session session) throws RemoteException {
+		return null;
+	}
+
+	@Override
+	public String browse(Session session) throws RemoteException {
+		return null;
+	}
+
+	@Override
+	public Session processLogin(String userType) throws RemoteException {
+		return null;
 	}
 }
