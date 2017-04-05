@@ -1,4 +1,11 @@
+/**
+ * UsersFactory
+ * @author Russell Sherman
+ *
+ */
 
+// Ryan: Please include useful comments in each file.
+// FIX: Create UsersFactory and use for assigning new users to the correct type
 public class UsersFactory extends AbstractFactory {
 	@Override
 	Users createUser(String userType) {
@@ -12,16 +19,16 @@ public class UsersFactory extends AbstractFactory {
 		
 	}
 	
+	// Create userRole variable
 	private String userRole;
-	private String[][] accounts = {{"customer"},{"administrator"}};
 	
 	public UsersFactory(String name){
 		userRole = name;
 	}
 	
-	
+	// Use auth to return the correct user type
 	public boolean auth() {
-		if((userRole.equals(accounts[0][0])))
+		if((userRole.equals("administrator")))
 			return true;
 		else
 			return false;

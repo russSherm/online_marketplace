@@ -5,6 +5,10 @@ import java.rmi.Naming;
  * @author Russell Sherman
  *
  */
+
+// DO I STILL NEED ADMIN CONTROLLER?
+
+// Create AdminController and variables
 public class AdminController {
 	private Server model;
 	private AdminView view;

@@ -16,24 +16,25 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterface {
 	
 	//Show client when command has been achieved 
 	public String update(Session session) {
-		return "Administrator Updated Item";		
+		return "Which item would you like to update?: ";		
 	}
 	
 	public String add(Session session) {
-		return "Administrator Added Item";		
+		return "What item would you like to add?: ";		
 	}
 	
 	public String remove(Session session) {
-		return "Administrator Removed Item";		
+		return "Which item would you like to remove?: ";		
 	}
 	
 	public String purchase(Session session) {
-		return "Customer Purchased Item";		
+		return "Which item would you like to purchase?: ";		
 	}
 	
 	//Administrator and Customer both able to browse
 	public String browse(Session session) {
-		return "Customer or Administrator Browsed Items";		
+		return "Here are the available items: ";
+		
 	}
 	
 	//Create session for user that has logged in

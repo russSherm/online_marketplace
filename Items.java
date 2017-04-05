@@ -1,46 +1,55 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Items Class
  * @author Russell Sherman
  */
 public class Items {
 	//Create Items for Marketplace
-	//Sample Item for commands only
-	private String name = "Socks";
-	private int quantity = 2;
+	String[] itemArray = { "Socks", "Shoes", "Shirt", "Pants", "Toothbrush", "Chair", "Laptop", "Shampoo", "Soap" };
+    List<String> abcItem = new ArrayList<String>(Arrays.asList(itemArray));
+ 
 	
 	/**
 	 * Browse Item
 	 */
 	public void browse() {
-		System.out.println("Item [ Name: "+name+", Browsed: " +quantity+" ]");
+		System.out.println("Item [ Name: "+abcItem+" ]");
 	}
 	
 	/**
 	 * Update Item
+	 * @param selectItem 
 	 */
-	public void update() {
-		System.out.println("Item [ Name: "+name+", Updated: " +quantity+" ]");
+	public void update(String selectItem) {
+		System.out.println("Item [ Name: "+abcItem+" ]");
 	}
 	
 	/**
 	 * Remove Item
+	 * @param selectItem 
 	 */
-	public void remove() {
-		System.out.println("Item [ Name: "+name+", Removed: " +quantity+" ]");
+	public void remove(String selectItem) {
+		System.out.println("Item [ Name: "+abcItem+" ]");
 	}
 	
 	/**
 	 * Add Item
+	 * @param selectItem 
+	 * @param string 
 	 */
-	public void add() {
-		System.out.println("Item [ Name: "+name+", Added: " +quantity+" ]");
+	public void add(String selectItem) {
+		System.out.println("Item [ Name: "+abcItem+" ]");
 	}
 	
 	/**
 	 * Purchase Item
+	 * @param selectItem 
 	 */
-	public void purchase() {
-		System.out.println("Item [ Name: "+name+", Purchased: " +quantity+" ]");
+	public void purchase(String selectItem) {
+		System.out.println("Item [ Name: "+abcItem+" ]");
 	}
 
 }

@@ -17,8 +17,10 @@ public class Dispatcher {
 	
 	/**
 	 * Dispatch correct view based on login credentials
+	 * @param marketplaceItem 
+	 * @throws InterruptedException 
 	 */
-	public void dispatch(String request) {
+	public void dispatch(String request) throws InterruptedException {
 		if(request.equalsIgnoreCase("administrator")) {
 			adminView.showView();
 		}

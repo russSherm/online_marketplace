@@ -6,6 +6,7 @@ import java.util.List;
  * @author Russell Sherman
  */
 
+// Create Clerk to take and place orders of items.
 public class Clerk {
 	private List<Initiate> initiateList = new ArrayList<Initiate>();
 	

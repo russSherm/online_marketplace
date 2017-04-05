@@ -6,7 +6,7 @@ public class AddItem implements Initiate {
 	private Items abcItem;
 	
 	/**
-	 * Constructor for Purchase Item
+	 * Constructor for Add Item
 	 * @param abcItem
 	 */
 	public AddItem(Items abcItem){
@@ -17,6 +17,6 @@ public class AddItem implements Initiate {
 	 * Execute Command Method
 	 */
 	public void execute() {
-		abcItem.add();
+		abcItem.add(null);
 	}
 }

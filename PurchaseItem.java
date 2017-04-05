@@ -17,6 +17,6 @@ public class PurchaseItem implements Initiate {
 	 * Execute Command Method
 	 */
 	public void execute() {
-		abcItem.purchase();
+		abcItem.purchase(null);
 	}
 }

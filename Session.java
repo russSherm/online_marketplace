@@ -6,6 +6,7 @@ import java.io.Serializable;
  *
  */
 
+// Create Session class for users
 public class Session implements Serializable {
 	private static final long serialVersionUID = 6590975621573939463L;
 	

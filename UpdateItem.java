@@ -17,6 +17,6 @@ public class UpdateItem implements Initiate {
 	 * Execute Command Method
 	 */
 	public void execute() {
-		abcItem.update();
+		abcItem.update(null);
 	}
 }

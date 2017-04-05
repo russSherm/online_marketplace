@@ -1,6 +1,3 @@
-import java.rmi.Naming;
-import java.util.Scanner;
-
 /**
  * Front Controller
  * @author Russell Sherman
@@ -23,17 +20,22 @@ public class FrontController {
 	
 	/**
 	 * Check credentials of user
+	 * @throws InterruptedException 
 	 */
-	private boolean isAuthenticUser() {
+	private boolean isAuthenticUser() throws InterruptedException {
 		System.out.println("User login complete");
+		Thread.sleep(3000);
 		return true;
 	}
 	
 	/**
 	 * Send request to Dispatcher
+	 * @param marketplaceItem 
+	 * @throws InterruptedException 
 	 */
-	public void dispatchRequest(String request) {
+	public void dispatchRequest(String request) throws InterruptedException {
 		System.out.println("Logging In...");
+		Thread.sleep(5000);
 		
 		//Dispatch request if login is successful
 		if(isAuthenticUser()) {
