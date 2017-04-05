@@ -5,6 +5,10 @@ import java.rmi.Naming;
  * @author Russell Sherman
  *
  */
+
+// DO I STILL NEED CUSTOMERCONTROLLER?
+
+//Create CustomerController and variables
 public class CustomerController {
 	private Server model;
 	private CustomerView view;
