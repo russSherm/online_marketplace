@@ -8,15 +8,14 @@ import java.util.List;
  */
 public class Items {
 	//Create Items for Marketplace
-	String[] itemArray = { "Socks", "Shoes", "Shirt", "Pants", "Toothbrush", "Chair", "Laptop", "Shampoo", "Soap" };
-    List<String> abcItem = new ArrayList<String>(Arrays.asList(itemArray));
+    ArrayList<String> itemArray  = new ArrayList<String>();
  
 	
 	/**
 	 * Browse Item
 	 */
 	public void browse() {
-		System.out.println("Item [ Name: "+abcItem+" ]");
+		System.out.println("Item [ Name: "+itemArray+" ]");
 	}
 	
 	/**
@@ -24,7 +23,7 @@ public class Items {
 	 * @param selectItem 
 	 */
 	public void update(String selectItem) {
-		System.out.println("Item [ Name: "+abcItem+" ]");
+		System.out.println("Item [ Name: "+itemArray+" ]");
 	}
 	
 	/**
@@ -32,7 +31,7 @@ public class Items {
 	 * @param selectItem 
 	 */
 	public void remove(String selectItem) {
-		System.out.println("Item [ Name: "+abcItem+" ]");
+		System.out.println("Item [ Name: "+itemArray+" ]");
 	}
 	
 	/**
@@ -41,7 +40,7 @@ public class Items {
 	 * @param string 
 	 */
 	public void add(String selectItem) {
-		System.out.println("Item [ Name: "+abcItem+" ]");
+		System.out.println("Item [ Name: "+itemArray+" ]");
 	}
 	
 	/**
@@ -49,7 +48,7 @@ public class Items {
 	 * @param selectItem 
 	 */
 	public void purchase(String selectItem) {
-		System.out.println("Item [ Name: "+abcItem+" ]");
+		System.out.println("Item [ Name: "+itemArray+" ]");
 	}
 
 }

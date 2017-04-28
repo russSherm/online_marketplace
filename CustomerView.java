@@ -39,9 +39,9 @@ public class CustomerView {
 		
 		// Ask customer what action they would like to take
 		System.out.println("How can we help you?");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		System.out.println("1.Add Item\n2.Browse Items\n3.Purchase Item\n4.Remove Item\n5.Update Item");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		System.out.println("Which number would you like to do?");
 		selectTask = input.nextInt();
 		
@@ -103,9 +103,5 @@ public class CustomerView {
 				System.out.println("Client Exception: " + e.getMessage());
 			}
 		}
-	}
-
-	public void registerListener(CustomerController ccontroller) {
-		//do something
 	}
 }
