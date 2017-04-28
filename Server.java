@@ -46,6 +46,13 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			Naming.rebind(name, assignment);
 			
 			System.out.println("Server Ready!");
+			
+			//Create connection to Database
+			//Could not connect, Exception thrown
+			//"No suitable driver found for jdbc:"
+			//Database database = new Database();
+			//database.main(args);
+
 		} catch (Exception e){
 			System.out.println("Server Exception: " + e.getMessage());
 			e.printStackTrace();
