@@ -15,8 +15,9 @@ public class BrowseItem implements Initiate {
 	
 	/**
 	 * Execute Command Method
+	 * synchronized
 	 */
-	public void execute() {
+	synchronized public void execute() {
 		abcItem.browse();
 	}
 }

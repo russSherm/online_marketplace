@@ -15,8 +15,9 @@ public class RemoveItem implements Initiate {
 	
 	/**
 	 * Execute Command Method
+	 * synchronize method
 	 */
-	public void execute() {
+	synchronized public void execute() {
 		abcItem.remove(null);
 	}
 }

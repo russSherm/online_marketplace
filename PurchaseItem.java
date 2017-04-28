@@ -15,8 +15,9 @@ public class PurchaseItem implements Initiate {
 	
 	/**
 	 * Execute Command Method
+	 * Synchronize method
 	 */
-	public void execute() {
+	synchronized public void execute() {
 		abcItem.purchase(null);
 	}
 }

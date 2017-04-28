@@ -1,22 +1,31 @@
+import java.util.Scanner;
+
 /**
  * Concrete Command Class
  * @author Russell Sherman
  */
 public class AddItem implements Initiate {
-	private Items abcItem;
+	private Items itemArray;
 	
 	/**
 	 * Constructor for Add Item
-	 * @param abcItem
 	 */
-	public AddItem(Items abcItem){
-		this.abcItem = abcItem;
+	public AddItem(Items itemArray){
+		this.itemArray = itemArray;
 	}
 	
 	/**
 	 * Execute Command Method
+	 * sychronize method
 	 */
-	public void execute() {
-		abcItem.add(null);
+	public synchronized void execute() {
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+		String additem = null;
+		
+		System.out.println("What product would you like to add?");
+		additem = input.nextLine();
+		
+		itemArray.add(additem);
 	}
 }

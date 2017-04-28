@@ -11,7 +11,7 @@ Once all files are in Tesla directory, follow these steps to execute the code:
 
 - Once you have logged in to tesla, ssh into our six different machines using the following command:
 
-- "ssh in-csci-rrpc03.cs.iupui.edu - 10.234.136.55" through "ssh in-csci-rrpc03.cs.iupui.edu - 10.234.136.60"
+- "ssh in-csci-rrpc01.cs.iupui.edu - 10.234.136.55" through "ssh in-csci-rrpc06.cs.iupui.edu - 10.234.136.60"
 
 - Provide your password for the ssh connection to the machines
 
@@ -19,7 +19,7 @@ Once all files are in Tesla directory, follow these steps to execute the code:
 
 - Repeat these steps again to open an additional Terminal/Command Line for all six machines
 
-- For this assignment, the Server machine will be 10.234.136.57
+- For this assignment, the Server machine will be 10.234.136.55
 
 - On one of the connections, compile all java files in the directory by running the 'javac *.java' command
 
