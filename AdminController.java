@@ -9,14 +9,14 @@ import java.rmi.Naming;
 // DO I STILL NEED ADMIN CONTROLLER?
 
 // Create AdminController and variables
-public class AdminController {
-	private Server model;
-	private AdminView view;
+//public class AdminController {
+//	private Server model;
+//	private AdminView view;
 	
 	//Bring together model and view
-	public AdminController (Server model, AdminView view){
-		this.model = model;
-		this.view = view;
-	}
+//	public AdminController (Server model, AdminView view){
+//		this.model = model;
+//		this.view = view;
+//	}
 
-}
+//}

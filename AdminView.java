@@ -44,12 +44,12 @@ public class AdminView {
 		selectTask = input.nextInt();
 		
 		// Create new Items instance
-		Items abcItem = new Items();
+		Items itemArray = new Items();
 		
 		// Concrete Commands
-		AddItem addItem = new AddItem(abcItem);
-		RemoveItem removeItem = new RemoveItem(abcItem);
-		UpdateItem updateItem = new UpdateItem(abcItem);
+		AddItem addItem = new AddItem(itemArray);
+		RemoveItem removeItem = new RemoveItem(itemArray);
+		UpdateItem updateItem = new UpdateItem(itemArray);
 		
 		// Invoker Object...
 	    Clerk clerk = new Clerk();
@@ -64,7 +64,7 @@ public class AdminView {
 			@SuppressWarnings("resource")
 			Scanner scan5 = new Scanner(System.in);
 			String selectItem = scan5.nextLine();
-			abcItem.update(selectItem);
+			itemArray.update(selectItem);
 			clerk.takeInitiate(updateItem);
 		}
 		
@@ -78,7 +78,7 @@ public class AdminView {
 			@SuppressWarnings("resource")
 			Scanner scan1 = new Scanner(System.in);
 			String selectItem = scan1.nextLine();
-			abcItem.add(selectItem);
+			itemArray.add(selectItem);
 		}
 		
 		else if (selectTask==3){
@@ -106,14 +106,10 @@ public class AdminView {
 			@SuppressWarnings("resource")
 			Scanner scan4 = new Scanner(System.in);
 			String selectItem = scan4.nextLine();
-			abcItem.remove(selectItem);
+			itemArray.remove(selectItem);
 			clerk.takeInitiate(removeItem);
 		}
 	
-	}
-
-	public void registerListener(AdminController acontroller) {
-		// do something
 	}
 	
 }
