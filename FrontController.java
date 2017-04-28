@@ -19,12 +19,17 @@ public class FrontController {
 	}
 	
 	/**
+	 * Create Database
+	 */
+	Database database = new Database();
+	
+	/**
 	 * Check credentials of user
 	 * @throws InterruptedException 
 	 */
 	private boolean isAuthenticUser() throws InterruptedException {
 		System.out.println("User login complete");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		return true;
 	}
 	
@@ -35,7 +40,7 @@ public class FrontController {
 	 */
 	public void dispatchRequest(String request) throws InterruptedException {
 		System.out.println("Logging In...");
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		
 		//Dispatch request if login is successful
 		if(isAuthenticUser()) {
