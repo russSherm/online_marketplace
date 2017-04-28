@@ -1,5 +1,6 @@
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.Scanner;
 
 /**
  * ServerImpl that implements ServerInterface class
@@ -20,7 +21,8 @@ public class ServerImpl extends UnicastRemoteObject implements ServerInterface {
 	}
 	
 	public String add(Session session) {
-		return "What item would you like to add?: ";		
+		return "What item would you like to add?: ";
+		
 	}
 	
 	public String remove(Session session) {

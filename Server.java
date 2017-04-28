@@ -30,13 +30,13 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		
 		try {
 			System.out.println("Creating a Server!");
-			Thread.sleep(1500);
+			Thread.sleep(1000);
 			
 			// Location of Server
 			String name = "//tesla.cs.iupui.edu:1720/Server";
 			
 			System.out.println("Server: Binding it to name: " + name);
-			Thread.sleep(1500);
+			Thread.sleep(1000);
 			
 			ServerInterface assignment = (ServerInterface) Proxy.newProxyInstance(ServerInterface.class.getClassLoader(),
 	                new Class<?>[] {ServerInterface.class},

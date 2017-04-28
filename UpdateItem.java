@@ -15,8 +15,9 @@ public class UpdateItem implements Initiate {
 	
 	/**
 	 * Execute Command Method
+	 * sychronize method
 	 */
-	public void execute() {
+	synchronized public void execute() {
 		abcItem.update(null);
 	}
 }
