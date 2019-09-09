@@ -3,10 +3,6 @@
  * @author Russell Sherman
  */
 
-// Ryan: Why does the Front Controller include the main() method?
-// Shouldn't a View have this functionality in it?
-// Fix: Removed main() method from Front Controller.
-// Added main() method to Client.java
 public class FrontController {
 	// Dispatcher instance
 	private Dispatcher dispatcher;

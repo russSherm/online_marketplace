@@ -8,8 +8,7 @@ import java.lang.reflect.Method;
  *
  */
 
-// Ryan: Please include useful comments in each file.
-// FIX: Create Authorization Invocation Handler used with Java Annotations
+// Create Authorization Invocation Handler used with Java Annotations
 public class AuthorizationInvocationHandler implements InvocationHandler, Serializable {
 	private static final long serialVersionUID = 6925780928377938176L;
 	private Object objectImpl;
@@ -17,8 +16,8 @@ public class AuthorizationInvocationHandler implements InvocationHandler, Serial
 	public AuthorizationInvocationHandler(Object impl) {
 	   this.objectImpl = impl;
 	}
-	// FIX: Invoke method to check Annotation in Requires Role class
-	// FIX: Create new Session
+	// Invoke method to check Annotation in Requires Role class
+	// Create new Session
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		if (method.isAnnotationPresent(RequiresRole.class)) {

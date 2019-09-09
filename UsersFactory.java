@@ -4,8 +4,7 @@
  *
  */
 
-// Ryan: Please include useful comments in each file.
-// FIX: Create UsersFactory and use for assigning new users to the correct type
+// Create UsersFactory and use for assigning new users to the correct type
 public class UsersFactory extends AbstractFactory {
 	@Override
 	Users createUser(String userType) {

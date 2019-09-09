@@ -19,9 +19,6 @@ public class Client {
 		
 		//Use Try-Catch for remote exceptions
 		try {
-			// Ryan: Here you are looking for a Marketplace but you bound a ServerInterface to this location.
-			// FIX: Look for the correct interface, in this case ServerInterface instead of Marketplace
-			
 			//Locate Marketplace Server
 			@SuppressWarnings("unused")
 			ServerInterface server = (ServerInterface) Naming.lookup(name);	

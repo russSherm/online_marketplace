@@ -4,6 +4,7 @@ import java.util.Scanner;
  * Concrete Command Class
  * @author Russell Sherman
  */
+
 public class AddItem implements Initiate {
 	private Items itemArray;
 	
