@@ -1,7 +1,5 @@
-# csci50700_spring2017_marketplace
-Spring 2017 Online Marketplace
-
-Instructions on executing from Tesla
+# Online Marketplace
+Instructions for running on Tesla
 
 Once all files are in Tesla directory, follow these steps to execute the code:
 
